@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criptografar Textos</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <div class="campo__principal">
+            <div class="campo">
+                <div>
+                    <textarea name="text__input" id="input-area" cols="100" rows="30"
+                        placeholder="Digite seu texto"></textarea>
+                        <div class="campo__alerta" id="alerta">
+                            <img class="campo__alerta__img" src="./assets/circle-exclamation-solid.svg" alt="exclamação">
+                            <p class="alerta__text">Por favor, digite apenas letras minúsculas e sem acento.</p>
+                        </div>
+                </div>
+                <div>
+                    <div class="campo__dois" id="output-area"></div>
+                    <img class="campo__dois__img" src="./assets/High quality products 1 1.svg" alt="">
+                    <div class="campo__dois__text">
+                        <h5>Nenhuma mensagem encontrada</h5>
+                        <p class="campo__dois__text__p">Digite um texto que você deseja criptografar ou descriptografar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <div class="bnt">
+                    <button class="bnt__criptografar" onclick="criptografarTextoHTML()">Criptografar</button>
+                    <button class="bnt__descriptografar" onclick="descriptografarTextoHTML()">Descriptografar</button>
+                    <button class="bnt__copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
